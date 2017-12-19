@@ -1,0 +1,9 @@
+{
+  "name": "module-b",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "module-a": "file:../module-a"
+  }
+}

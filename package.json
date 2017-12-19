@@ -1,0 +1,14 @@
+{
+  "name": "ts-modules-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "concurrently \"yarn tsc-a\" \"yarn tsc-b\"",
+    "tsc-a": "tsc --watch --p ./module-a/tsconfig.json",
+    "tsc-b": "tsc --watch --p ./module-b/tsconfig.json"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
